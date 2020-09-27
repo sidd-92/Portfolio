@@ -1,11 +1,17 @@
 import Link from "next/link";
 import Layout from "../components/Layout";
+import Head from "next/head";
+
 const Index = () => (
-  <div className="bg-gray-100">
+  <React.Fragment>
+    <Head>
+      <title>Create Next App</title>
+      <link rel="icon" href="/favicon.ico" />
+    </Head>
     <Layout>
       <Link href="/about">About</Link>
       <h1>Home</h1>Home Page
     </Layout>
-  </div>
+  </React.Fragment>
 );
 export default Index;
