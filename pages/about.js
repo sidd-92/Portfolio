@@ -1,11 +1,11 @@
-import Link from "next/link";
+import Layout from "../components/Layout";
+
 const About = () => (
-  <div>
-    <Link href="/">Home</Link>
-    <h1>About</h1>
+  <Layout>
+    <div className="text-2xl font-bold py-6">Welcome To Next Js Tutorial App</div>
     <div>About Me</div>
     <img src="/bg.jpg" width="380" height="220" alt="bg" />
-  </div>
+  </Layout>
 );
 
 export default About;
